@@ -9,14 +9,16 @@
     <script src="countdown-timer.js"></script>
 </head>
 <body>
-    <div className="App">
+    <div class="App">
         <h1>Countdown Timer</h1>
-        <form>
-          <input required type="text" placeholder="Event Name (required)" />
-          <input required type="date" placeholder="Date of Event (required)"/>
-          <input type="time" placeholder="Time of Event (optional)"/>
+        <form onsubmit="submitForm()">
+          <input required id="name-input" type="text" placeholder="Event Name (required)" />
+          <input required id="date" type="date" placeholder="Date of Event (required)"/>
+          <input id="time" type="time" placeholder="Time of Event (optional)"/>
           <input type="submit" value="Start Countdown"></input>   
         </form>
-      </div>
+        <h1 id="name-text"></h1>
+        <h3 id="timer"></h1>
+    </div>
 </body>
 </html>
